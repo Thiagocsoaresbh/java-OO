@@ -26,17 +26,3 @@ Também existe a pasta:
 É dentro da pasta `evidencias` que você deverá salvar os prints solicitados em cada atividade.
 
 ---
-
-## Código base
-
-### Arquivo `Aluno.java`
-
-```java
-package Exercicio01_Classe;
-
-public class Aluno {
-
-    public String nome;
-    public int idade;
-
-}
