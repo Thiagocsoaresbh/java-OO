@@ -1,21 +1,13 @@
 package Exercicio03_New;
 
-public class Principal{
+public class Principal {
 
     public static void main(String[] args) {
+        // Atividade 1 (PDF): execute sem alterar nada.
+        // Depois, nas próximas atividades, você vai criar mais objetos e imprimir as referências.
+        Aluno aluno1 = new Aluno();
 
-        // 'new Aluno()' é a parte que CRIA o objeto na memória.
-        // Sem o 'new', nenhum objeto real é criado.
-        Aluno a1 = new Aluno();
-
-        // Vamos criar um segundo objeto, para mostrar que podemos criar varios.
-        Aluno a2 = new Aluno();
-
-        System.out.println("Exercicio 03 - Criamos dois objetos com new.");
-        System.out.println("a1 e a2 sao dois alunos diferentes na memoria.");
-        System.out.println("a1: " + a1);
-        System.out.println("a2: " + a2);
-
+        System.out.println("Exercicio 03 - Criacao de multiplos objetos.");
+        System.out.println(aluno1);
     }
-
 }
