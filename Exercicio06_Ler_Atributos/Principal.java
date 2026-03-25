@@ -2,11 +2,6 @@ package Exercicio06_Ler_Atributos;
 
 public class Principal {
 
-    static class Aluno {
-        public String nome;
-        public int idade;
-    }
-
     public static void main(String[] args) {
 
         Aluno objetoAluno = new Aluno();
