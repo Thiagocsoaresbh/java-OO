@@ -4,19 +4,51 @@ Conjunto de exercícios para suporte e prática no aprendizado de **Java** e **O
 
 ## Estrutura
 
-- `Exercicio01_Classe/`
-- `Exercicio02_Objeto/`
-- `Exercicio03_New/`
-- `Exercicio04_Vazio/`
-- `Exercicio05_Preencher/`
-- `Exercicio06_Ler_Atributos/`
+### Nível 1 — Fundação (Classe, Objeto, Atributos)
+
+- `Exercicio01_Classe/` — O que é uma classe (molde)
+- `Exercicio02_Objeto/` — O que é um objeto (instância)
+- `Exercicio03_New/` — Criar múltiplos objetos
+- `Exercicio04_Vazio/` — Valores padrão (defaults)
+- `Exercicio05_Preencher/` — Preenchendo atributos
+- `Exercicio06_Ler_Atributos/` — Lendo atributos
+
+### Nível 2 — Métodos e Construtores
+
+- `Exercicio07_Construtores/` — Inicializar objetos no momento da criação
+- `Exercicio08_Metodos/` — Adicionar comportamento (ações) aos objetos
+- `Exercicio09_Encapsulamento/` — Proteger dados com `private` e `public`
 
 Cada pasta geralmente possui:
 
-- `Aluno.java`
-- `Principal.java`
-- um enunciado (`Exercicio_XX_*.md`)
-- um arquivo de respostas (`Resposta_Exercicio_XX.md`)
+- `Aluno.java` — A classe
+- `Principal.java` — Arquivo executável (main) com exemplos
+- `README.md` — Objetivo e instruções
+- um enunciado (`Exercicio_XX_*.md`) — O que fazer
+- um arquivo de respostas (`Resposta_Exercicio_XX.md`) — Respostas esperadas e explicações
+
+## Roadmap de Aprendizado
+
+Siga nesta ordem para melhor aprendizado:
+
+| Exercício | Conceito | Duração | Status |
+| --------- | -------- | ------- | ------ |
+| 01 | Classe (molde) | 5 min | ✅ |
+| 02 | Objeto (instância) | 5 min | ✅ |
+| 03 | Múltiplos objetos | 5 min | ✅ |
+| 04 | Valores padrão | 5 min | ✅ |
+| 05 | Preenchendo atributos | 10 min | ✅ |
+| 06 | Lendo atributos | 10 min | ✅ |
+| **07** | **Construtores** | **15 min** | 🆕 |
+| **08** | **Métodos** | **20 min** | 🆕 |
+| **09** | **Encapsulamento** | **20 min** | 🆕 |
+
+**Próximas (sugestões):**
+
+- Exercício 10: Herança
+- Exercício 11: Polimorfismo
+- Exercício 12: Interfaces
+- Exercício 13: Classes Abstratas
 
 ## Como executar no Windows (PowerShell / CMD)
 
