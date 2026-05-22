@@ -5,57 +5,60 @@ public class Aluno {
     public String nome;
     public int idade;
 
-    // Construtor com parâmetros (aprendido no Exercício 07)
+    // Construtor com parametros (aprendido no Exercicio 07)
     public Aluno(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
     }
 
-    // ========== MÉTODOS ==========
+    // ========== METODOS ==========
+    // Metodo: bloco de codigo com nome que define um COMPORTAMENTO do objeto.
+    // Estrutura: [modificador] [tipo de retorno] [nome] ([parametros]) { corpo }
 
-    // Método 1: Void (NÃO retorna nada, só faz algo)
-    // Uso: aluno.apresentar();
+    // "void" -> o metodo executa algo mas NAO devolve nenhum valor ao chamador.
+    // Sem parametros: nao precisa receber nada de fora para funcionar.
     public void apresentar() {
-        System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+        // Dentro do metodo, "nome" e "idade" sem "this" funcionam pois nao ha
+        // parametros com o mesmo nome aqui — o Java resolve para os atributos do objeto.
+        System.out.println("Ola, meu nome e " + nome + " e tenho " + idade + " anos.");
     }
 
-    // Método 2: Void com parâmetro
-    // Uso: aluno.fazer(20);
+    // "void" com PARAMETRO: o chamador passa um valor que so existe dentro deste metodo.
+    // "int nota" -> parametro local, valido apenas enquanto o metodo executa.
     public void fazer(int nota) {
         System.out.println(nome + " fez um teste com nota " + nota);
     }
 
-    // Método 3: Com RETORNO (int)
-    // Uso: int ano = aluno.calcularAnoNascimento();
-    // Retorna o ano de nascimento estimado
+    // Tipo de retorno "int": o metodo calcula algo e DEVOLVE um inteiro ao chamador.
+    // "return" encerra o metodo e envia o valor de volta.
     public int calcularAnoNascimento() {
-        // Assumindo que o ano atual é 2026
-        int anoAtual = 2026;
+        int anoAtual = 2026;          // variavel LOCAL: so existe dentro deste metodo
         int anoNascimento = anoAtual - idade;
-        return anoNascimento;
+        return anoNascimento;         // devolve o resultado para quem chamou
     }
 
-    // Método 4: Com RETORNO (String)
-    // Uso: String mensagem = aluno.obterCategoria();
+    // Tipo de retorno "String": devolve texto.
+    // "if / else" -> estrutura condicional: executa um bloco OU outro dependendo da condicao.
     public String obterCategoria() {
-        if (idade < 18) {
+        if (idade < 18) {       // se a condicao for verdadeira, executa este bloco
             return "Menor de idade";
-        } else {
+        } else {                // caso contrario, executa este
             return "Maior de idade";
         }
+        // O metodo sempre retorna algo — o compilador exige que todo caminho tenha "return".
     }
 
-    // Método 5: Com parâmetro E retorno
-    // Uso: int resultado = aluno.multiplicarIdade(2);
+    // Parametro E retorno: recebe um valor, opera sobre ele e devolve o resultado.
     public int multiplicarIdade(int multiplicador) {
-        int resultado = idade * multiplicador;
+        int resultado = idade * multiplicador; // "*" e o operador de multiplicacao
         return resultado;
     }
 
-    // Método 6: Void que imprime informações formatadas
-    // Uso: aluno.exibirInfo();
+    // Metodo chamando outros metodos da mesma classe.
+    // "calcularAnoNascimento()" e "obterCategoria()" sao chamados sem "this"
+    // pois o Java assume que sao metodos do proprio objeto.
     public void exibirInfo() {
-        System.out.println("===== Informações do Aluno =====");
+        System.out.println("===== Informacoes do Aluno =====");
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
         System.out.println("Ano de nascimento (estimado): " + calcularAnoNascimento());
