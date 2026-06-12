@@ -13,5 +13,4 @@ out/
 .DS_Store
 Thumbs.db
 
-# gabaritos professor
-**/Resposta_*_Professor.md
+# gabaritos professor (branch professor: respostas INCLUIDAS)

@@ -25,6 +25,14 @@ Conjunto de exercícios para suporte e prática no aprendizado de **Java** e **O
 - `Java_11_Estado_Objeto/` - Estado do objeto, Random, ciclo de vida e Garbage Collection
 - `Java_12_Relacoes/` - Associação, Agregação e Composição entre objetos
 
+### Nível 4 - Herança e Polimorfismo
+
+- `Java_13_Heranca/` - Herança com `extends` e `super`
+- `Java_14_Sobrescrita/` - Sobrescrita de métodos com `@Override`
+- `Java_15_Abstrato/` - Classes e métodos abstratos
+- `Java_16_Interfaces/` - Interfaces, `implements` e métodos `default`
+- `Java_17_Polimorfismo/` - Polimorfismo, upcasting, downcasting e vinculação dinâmica
+
 Cada pasta geralmente possui:
 
 - `Aluno.java` - A classe
@@ -49,13 +57,17 @@ Siga nesta ordem para melhor aprendizado:
 | **10** | **Modificadores de acesso** | **20 min** | 🆕 |
 | **11** | **Estado do objeto e GC** | **20 min** | 🆕 |
 | **12** | **Associação, Agregação, Composição** | **25 min** | 🆕 |
+| **13** | **Herança (extends, super)** | **20 min** | 🆕 |
+| **14** | **Sobrescrita (@Override)** | **20 min** | 🆕 |
+| **15** | **Classes Abstratas** | **20 min** | 🆕 |
+| **16** | **Interfaces** | **25 min** | 🆕 |
+| **17** | **Polimorfismo** | **25 min** | 🆕 |
 
-**Próximas (sugestões):**
+**Próximas (sugestões — Módulo 3):**
 
-- Exercício 13: Herança
-- Exercício 14: Polimorfismo
-- Exercício 15: Interfaces
-- Exercício 16: Classes Abstratas
+- Exercício 18: Arrays de objetos
+- Exercício 19: ArrayList
+- Exercício 20: Coleções (List, Set, Map)
 
 ## Como executar no Windows (PowerShell / CMD)
 
