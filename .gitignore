@@ -13,4 +13,11 @@ out/
 .DS_Store
 Thumbs.db
 
+# driver JDBC (baixado manualmente, ver README)
+lib/
+
+# arquivos de banco de dados H2 (gerados ao executar os exercicios de JDBC)
+*.mv.db
+*.trace.db
+
 # gabaritos professor (branch professor: respostas INCLUIDAS)
