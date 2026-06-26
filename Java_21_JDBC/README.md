@@ -10,6 +10,8 @@ proprio programa Java — sem precisar instalar nenhum servidor.
 
 - `Aluno.java` - classe com nome, matricula e nota (mesma estrutura dos exercicios anteriores).
 - `Principal.java` - conecta no banco, cria a tabela, insere, consulta, atualiza e remove registros.
+- `Consulta.java` - so conecta e consulta os dados que ja existem, sem recriar a tabela. Use depois de
+  rodar o `Principal` para confirmar que os dados ficaram salvos em disco.
 - `Questoes_Java_21_JDBC.md` - enunciado e espaco para suas respostas.
 
 ## Preparacao (uma vez so) - baixando o driver JDBC do H2
@@ -42,6 +44,35 @@ java -cp ".;lib/*" Java_21_JDBC.Principal
 
 Ao executar, o H2 cria automaticamente os arquivos `Java_21_JDBC\escola.mv.db` (o banco de dados em si).
 Esses arquivos tambem sao ignorados pelo Git — pode rodar o programa varias vezes sem se preocupar.
+
+Depois, para confirmar que os dados ficaram salvos (sem rodar o `Principal` de novo), compile e execute o `Consulta.java`:
+
+```bat
+javac -cp "lib/*" Java_21_JDBC\Consulta.java
+java -cp ".;lib/*" Java_21_JDBC.Consulta
+```
+
+## Visualizando o banco pelo navegador (console web do H2)
+
+O H2 tem um console visual embutido, parecido com um "Excel" do banco de dados. A partir da raiz do repositorio:
+
+```bat
+java -cp "lib/*" org.h2.tools.Console
+```
+
+Isso abre uma aba no navegador (normalmente `http://localhost:8082`). Preencha o login assim:
+
+| Campo | Valor |
+|---|---|
+| Driver Class | `org.h2.Driver` (ja vem preenchido) |
+| JDBC URL | `jdbc:h2:./Java_21_JDBC/escola` |
+| User Name | `sa` |
+| Password | *(deixe em branco)* |
+
+Clique em **Connect**. A tabela `ALUNO` aparece na arvore a esquerda, e da para rodar SQL livre
+(ex: `SELECT * FROM aluno`) na caixa de texto central. Nao existe senha real aqui — `sa` sem senha
+e so o padrao de desenvolvimento do H2, e cada aluno tera o seu proprio arquivo de banco, local na
+propria maquina.
 
 ## Observacao sobre o `-cp "lib/*"`
 
